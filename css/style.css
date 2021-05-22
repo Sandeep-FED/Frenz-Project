@@ -12,8 +12,112 @@
 /* CSS for Body */
 body{
     height: 100vh;
-    background: url(.images/bg.jpg);
+    background-image: url("C:\\Users\\HP\\OneDrive\\Music\\Frenz-Project\\Images\\Bg.jpg");
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px; /* vertical & horizontal padding*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.logo{
+    position: 
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideRight 0s linear forwards;
+}
+
+
+.toggle{
+    position:relative;
+    height: 30px;
+    width: 30px;
+    background: url("C:\\Users\\HP\\OneDrive\\Music\\Frenz-Project\\Images\\menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1000px;
+}
+
+.toggle.active{
+    background: url("C:\\Users\\HP\\OneDrive\\Music\\Frenz-Project\\Images\\close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.navigation
+{
+    position: absolute;
+    display: flex;
+    right: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.navigation.active{
+    opacity:1;
+    visibility: visible;
+}
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600px;
+    opacity: 0;
+}
+
+.navigation.active li a{
+    animation: slideRight 0s linear forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+
+}
+
+/* Adding animation to the page*/
+@keyframes slideLeft
+{
+    0% {
+        transform:translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight
+{
+    0% {
+        transform:translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
