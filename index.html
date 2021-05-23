@@ -14,12 +14,14 @@
 
           <div class="toggle" onclick="menuToggle()"></div>
           <ul class="navigation">
-              <li><a href="#" style="i--1"></a>Home</a></li>
-              <li><a href="#" style="i--2">About</a></li>
-              <li><a href="#" style="i--3">Contact</a></li>
-              <li><a href="#" style="i--4">More</a></li>
+              <li><a href="./index.html" style="--i:1">Home</a></li>
+              <li><a href="#" style="--i:2">About</a></li>
+              <li><a href="#" style="--i:3">Contact</a></li>
+              <li><a href="#" style="--i:4">More</a></li>
           </ul>
       </header>
+      <h1 id="h1">Friends</h1>
+      <p id="p1">The ones who are irreplaceables!!</p>
       <script language="JavaScript">
           function menuToggle(){
               const toggle = document.querySelector('.toggle');
@@ -28,7 +30,6 @@
 
               toggle.classList.toggle('active');
               nav.classList.toggle('active');
-
           }
       </script>
   </body>

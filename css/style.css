@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&family=Libre Barcode 128 Text:wght@100;200;300;400;500;700;900&family=Pacifico:wght@100;200;300;400;500;700;900&display=swap');
 
 /* CSS for All */
 *
@@ -9,10 +9,15 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
+html{
+    height: 100;
+    overflow: hidden;
+}
 /* CSS for Body */
 body{
     height: 100vh;
-    background-image: url("C:\\Users\\HP\\OneDrive\\Music\\Frenz-Project\\Images\\Bg.jpg");
+    background-color: #ffcccc;
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,15 +37,32 @@ header{
 
 }
 
+#h1 {
+    text-align:  center;
+    padding-top: 10%;
+    font-family: "pacifico";
+    font-weight:500;
+    font-size: 4rem;
+    color:#1e272e;
+}
+
+#p1{
+    text-align: center;
+    font-family: 'Libre Barcode 128 Text';
+    color:#1e272e;
+    font-size: 30px;
+}
+
 .logo{
-    position: 
-    font-size: 20px;
-    color: black;
+    position: relative;
+    font-size: 40px;
+    color: #1e272e;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: slideRight 0s linear forwards;
+    letter-spacing: 3px;
+    animation: slideLeft 0.5s linear forwards;
+    opacity: 0;
 }
 
 
@@ -54,13 +76,15 @@ header{
     background-size: cover;
     cursor: pointer;
     z-index: 1000px;
+    animation: slideRight 0.5s linear forwards;
+    opacity: 0;
 }
 
 .toggle.active{
     background: url("C:\\Users\\HP\\OneDrive\\Music\\Frenz-Project\\Images\\close.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 30px;
+    background-size: 25px;
 }
 
 .navigation
@@ -85,14 +109,15 @@ header{
     display: inline-block;
     text-decoration: none;
     margin: 0px 20px;
-    color: black;
+    color: #1e272e;
     font-size: 18px;
     font-weight: 600px;
     opacity: 0;
+    font-family: 'Helvetica';
 }
 
 .navigation.active li a{
-    animation: slideRight 0s linear forwards;
+    animation: slideRight 0s forwards;
     animation-delay: calc(var(--i) * 0.2s);
 
 }
@@ -101,7 +126,7 @@ header{
 @keyframes slideLeft
 {
     0% {
-        transform:translateX(-150px);
+        transform:translateX(150px);
         opacity: 0;
     }
     100% {
@@ -120,4 +145,11 @@ header{
         transform: translateX(0px);
         opacity: 1;
     }
+}
+
+
+/* Making mobile ready*/
+
+@media screen {
+    
 }
