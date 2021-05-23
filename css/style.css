@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&family=Libre Barcode 128 Text:wght@100;200;300;400;500;700;900&family=Pacifico:wght@100;200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&family=VT323:wght@100;200;300;400;500;700;900&family=Pacifico:wght@100;200;300;400;500;700;900&display=swap');
 
 /* CSS for All */
 *
@@ -17,7 +17,7 @@ html{
 /* CSS for Body */
 body{
     height: 100vh;
-    background-color: #ffcccc;
+    background-color: #4FFFB0;
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,13 +42,13 @@ header{
     padding-top: 10%;
     font-family: "pacifico";
     font-weight:500;
-    font-size: 4rem;
+    font-size: 5rem;
     color:#1e272e;
 }
 
 #p1{
     text-align: center;
-    font-family: 'Libre Barcode 128 Text';
+    font-family: 'VT323';
     color:#1e272e;
     font-size: 30px;
 }
@@ -110,10 +110,10 @@ header{
     text-decoration: none;
     margin: 0px 20px;
     color: #1e272e;
-    font-size: 18px;
-    font-weight: 600px;
+    font-size: 19px;
+    font-weight: 1200px;
     opacity: 0;
-    font-family: 'Helvetica';
+    font-family: 'VT323';
 }
 
 .navigation.active li a{
