@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&family=VT323:wght@100;200;300;400;500;700;900&family=Pacifico:wght@100;200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&family=Jost:wght@100;200;300;400;500;700;900&family=VT323:wght@100;200;300;400;500;700;900&family=Pacifico:wght@100;200;300;400;500;700;900&display=swap');
+/* 
+    Author: Sandeep p.s;
+    Theme: Testing responsive design;
+    version: 1.0;
+*/ 
+
 
 /* CSS for All */
 *
 {
-    margin: 0;
-    padding: 0;
+    margin: 0 0;
+    padding: 0 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
 }
+.container {
+    width: 80%;
+    margin: 0 auto; /* for top 5% and others are auto..applied outside border*/
+    padding: 1%; /* "exception" padding applied inside border*/ 
 
-html{
-    height: 100;
-    overflow: hidden;
 }
+
 /* CSS for Body */
 body{
     height: 100vh;
@@ -114,9 +122,9 @@ header{
     margin: 0px 20px;
     color: #1e272e;
     font-size: 19px;
-    font-weight: 1200px;
+    font-weight: Bolder;
     opacity: 0;
-    font-family: 'VT323';
+    font-family: 'Jost';
 }
 
 .navigation.active li a{
